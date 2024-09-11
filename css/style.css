@@ -2,17 +2,31 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  height: 2000px;
+}
+
+h1,
+ul,
+p {
+  margin: 0px;
 }
 
 ul {
-  margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
+
+/* adicionando informação para limitar o tamanho da imagem main */
+img {
+  max-width: 100%;
+  display: block;
+}
+/* terminando limite da imagem main */
 
 .header-bg {
   background-color: #000000;
@@ -43,6 +57,8 @@ header {
   padding: 16px 0px;
   font-size: 16px;
   position: relative;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
 .header-menu a:after {
@@ -91,3 +107,119 @@ header {
   }
 }
 /* Terminando a configuração do header */
+
+/* Iniciando introdução main */
+.introducao-bg {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* inicio do posicionamento do main */
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  box-sizing: border-box;
+  max-width: 1920px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 80px;
+}
+
+.introducao-imagem {
+  margin-bottom: -120px;
+}
+
+.introducao img {
+  height: auto;
+  object-fit: cover;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+  font-size: 58px;
+  line-height: 112%;
+  color: #006632;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.introducao h1 span {
+  color: #e62f2e;
+  /* color: #ffb001; */
+  /* color: #006632; */
+}
+
+.introducao p {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #b2b2b2;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.introducao a {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#f7c908, #f2a50c);
+  border-radius: 6px;
+  box-shadow: 0 1px 2px #ffffff;
+  text-transform: uppercase;
+  color: #332201;
+  font-size: 18px;
+  line-height: 1.33;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width: 600px) {
+  .introducao a {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 48px;
+  }
+  .introducao p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background: #111111;
+    padding-top: 40px;
+    box-shadow: 0 -60px #ffffff;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .introducao h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
+}
+/* final do posicionamento do main */
+/* Terminando introdução main */
