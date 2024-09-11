@@ -7,14 +7,23 @@
     <title>Actividade Turismo Portugal</title>
     <meta name="description" content="Actividade de Turismo Portugal" />
 
+    <link rel="stylesheet" href="/css/global/global.css" />
+    <link rel="stylesheet" href="/css/utilidades/tipografia.css" />
+    <link rel="stylesheet" href="/css/utilidades/cores.css" />
+    <link rel="stylesheet" href="/css/global/header.css" />
+    <link rel="stylesheet" href="/css/utilidades/componentes.css" />
+    <link rel="stylesheet" href="/css/home/introducao.css" />
+    <link rel="stylesheet" href="/css/turismo/turismo-lista.css" />
+    <link rel="stylesheet" href="/css/global/footer.css" />
     <link rel="stylesheet" href="/css/style.css" />
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&family=Roboto:wght@100;400;500&display=swap"
       rel="stylesheet"
-    /> -->
+    />
   </head>
 
   <body>
@@ -26,11 +35,10 @@
         </a>
       </div>
       <nav aria-label="primaria">
-        <ul class="header-menu">
-          <li><a href="gastronomia.html">Gastronomia</a></li>
-          <li><a href="castelo.html">Castelo</a></li>
-          <li><a href="mosteiro.html">Mosteiro</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
+        <ul class="header-menu cor-branco">
+          <li><a href="#segunda-parte">GASTRONOMIA</a></li>
+          <li><a href="#segunda-parte">CASTELO</a></li>
+          <li><a href="#segunda-parte">MOSTEIRO</a></li>
         </ul>
       </nav>
     </header>
@@ -40,19 +48,16 @@
     <main class="introducao-bg">
       <div class="introducao">
         <div class="introducao-conteudo">
-          <h1>Conheça Nosso <span>Turísmo Poruguês.</span></h1>
-          <!-- <h1>
-            <span class="cor-um">Conheça Nosso</span>
-            <span class="cor-dois">Turísmo Português.</span>
-            <span class="cor-tres">.</span>
-          </h1> -->
-          <p>
+          <h1 class="texto-grande cor-verde">
+            Conheça Nosso <span class="cor-vermelho">Turísmo Poruguês.</span>
+          </h1>
+          <p class="texto-medio cor-cinza">
             Alguma vez pensou fazer um cruzeiro no Douro, com escalas em quintas
             centenárias para degustar soberbos vinhos do Porto? Ou um passeio de
             barco por entre os belos canais da ria de Aveiro? Portugal continua
             a oferecer muitas surpresas por descobrir.
           </p>
-          <a href="./gastronomia.html">Escolha a Sua</a>
+          <a class="botao" href="#segunda-parte">Escolha a Sua</a>
         </div>
         <div class="introducao-imagem">
           <img src="./img/torre_belem_lisboa.jpg" alt="Torre de belem Lisboa" />
@@ -60,5 +65,80 @@
       </div>
     </main>
     <!-- Introdução main Fim -->
+
+    <article class="turismo-lista">
+      <h2 id="segunda-parte" class="text-grande">
+        Descubra Portugal através de sabores autênticos, castelos que contam
+        histórias e mosteiros que inspiram espiritualidade — uma viagem onde a
+        tradição e a cultura se encontram a cada passo.
+      </h2>
+      <ul>
+        <li>
+          <a href="/gastronomia.html"></a>
+          <img src="/img/bacalhau-principal.jpg" alt="bacalhau" />
+          <h3 class="texto-grade">Gastronomia</h3>
+        </li>
+        <li>
+          <a href="/castelo.html"></a>
+          <img src="/img/castelo-principal.jpg" alt="castelo" />
+          <h3 class="texto-grade">Castelo</h3>
+        </li>
+        <li>
+          <a href="/mosteiro.html"></a>
+          <img src="/img/mosteiro-principal.jpg" alt="mosteiro" />
+          <h3 class="texto-grade">Mosteiro</h3>
+        </li>
+      </ul>
+    </article>
+    <footer class="footer-bg">
+      <div class="footer container">
+        <a href="/index.html">
+          <img src="/img/logo-footer.png" alt="Turismo de Portugal" />
+        </a>
+        <div class="footer-contato">
+          <h3 class="cor-branco">Contacto</h3>
+          <ul class="cor-cinza">
+            <li><a href="tel:+351913058112">+351 913 058 112</a></li>
+            <li>
+              <a href="mailto:portugal.danielcosta@gmail.com"
+                >portugal.danielcosta@gmail.com</a
+              >
+            </li>
+            <li>Jardim Público - Covilhã</li>
+            <li>Castelo Branco - PT</li>
+          </ul>
+          <div class="footer-redes">
+            <a href="https://www.linkedin.com/in/daniel-louro-costa-dev">
+              <img src="/img/linkedin logo_icon.png" alt="Linkedin" />
+            </a>
+            <a href="./">
+              <img src="/img/github-logo_icon.png" alt="Github" />
+            </a>
+            <a href="./">
+              <img src="/img/telegram_logo_icon.png" alt="Telegram" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-informacoes">
+          <h3 class="cor-branco">Informações</h3>
+          <nav>
+            <div>
+              <p class="cor-cinza">
+                Conteúdo de conclusão do curso<br /><br />
+
+                Construção de Páginas Web <br /><br />
+
+                Formação Profissional da Amadora<br /><br />
+
+                Formador - <span class="cor-branco">Manuel Viana</span>
+              </p>
+            </div>
+          </nav>
+        </div>
+        <p class="footer-copy cor-branco">
+          DanielDlc ©️ Alguns direitos reservados.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
