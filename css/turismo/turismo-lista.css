@@ -1,9 +1,11 @@
 .turismo-lista h2 {
-  margin-bottom: 40px;
+  margin-bottom: 2px;
   box-sizing: border-box;
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 30px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
