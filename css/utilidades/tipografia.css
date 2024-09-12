@@ -11,3 +11,10 @@
   font-family: "Roboto";
   font-weight: 400;
 }
+
+.texto-pequeno {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-family: "Roboto";
+  font-weight: 400;
+}
